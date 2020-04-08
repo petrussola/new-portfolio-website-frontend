@@ -18,9 +18,9 @@ const StyledSection = styled.section`
     align-items: center;
     margin: 0 auto;
     width: 95%;
-    background-image: url(${backgroundImage});
-    border-radius: 10px;
-    box-shadow: 0.2rem 0.2rem 0.5rem gray;
+    /* background-image: url(${backgroundImage}); */
+    /* border-radius: 10px;
+    box-shadow: 0.2rem 0.2rem 0.5rem gray; */
     section {
         /* background-color: brown; */
         display: flex;

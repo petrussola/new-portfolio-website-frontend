@@ -10,17 +10,18 @@ import Skills from './components/skills';
 import Footer from './components/footer';
 
 // DATA
-import data from './data/data';
+import { data, skills } from './data/data';
 
 function App() {
     const [listProjects] = useState(data);
+    const [listSkills] = useState(skills);
     return (
         <div className="App">
             <Header />
             <Jumbotron />
             <Body />
             <Projects listProjects={listProjects} />
-            <Skills />
+            <Skills listSkills={listSkills} />
             <Footer />
         </div>
     );

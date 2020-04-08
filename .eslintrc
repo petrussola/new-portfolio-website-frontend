@@ -12,6 +12,7 @@
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
         "prettier/prettier": ["error"],
         "comma-dangle": ["error", "never"],
-        "react/prop-types": 0
+        "react/prop-types": 0,
+        "no-nested-ternary": "off"
     }
 }

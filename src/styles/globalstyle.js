@@ -72,6 +72,11 @@ h3 {
 	font-size: 2rem;
     padding: 0.5rem;
 }
+h4 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+    padding: 0.5rem;
+}
 p {
 	line-height: 1.5rem;
 	font-size: 1rem;

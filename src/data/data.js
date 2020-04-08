@@ -1,6 +1,6 @@
 import artFunderImage from '../media/projects/art-funder.png';
 
-const data = [
+export const data = [
     {
         id: 1,
         name: 'Art-Funder.com',
@@ -105,4 +105,35 @@ const data = [
     }
 ];
 
-export default data;
+export const skills = {
+    Frontend: [
+        'React',
+        'Redux',
+        'Javacsript',
+        'HTML',
+        'CSS',
+        'Styled-Components',
+        'LESS',
+        'Jest',
+        'Netlify',
+        'Zeit',
+        'Stripe'
+    ],
+    Backend: [
+        'Nodejs',
+        'Express',
+        'Python',
+        'PostgreSQL',
+        'MongoDB',
+        'SQL',
+        'RESTful APIs',
+        'JWT',
+        'Travis-CI',
+        'Continuous Integration',
+        'Heroku',
+        'Stripe'
+    ],
+    'Version Control': ['Git', 'GitHub']
+};
+
+// export default data;
