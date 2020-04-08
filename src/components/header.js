@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
-    background-color: #035b96;
+    background-color: #3f51b5;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -19,7 +19,7 @@ const StyledHeader = styled.header`
 const header = () => {
     return (
         <StyledHeader>
-            <h2>Pere</h2>
+            <h2>{`<Pere />`}</h2>
         </StyledHeader>
     );
 };

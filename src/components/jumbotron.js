@@ -36,6 +36,10 @@ const StyledDiv = styled.div`
             justify-content: space-around;
             width: 50%;
         }
+        span {
+            color: #3f51b5;
+            font-weight: bold;
+        }
     }
 `;
 
@@ -45,38 +49,46 @@ const jumbotron = () => {
             <section>
                 <nav>
                     <a href="mailto:pere.solaclaver@gmail.com">
-                        <EmailIcon style={{ fontSize: 80 }} />
+                        <EmailIcon style={{ fontSize: 80 }} color="primary" />
                     </a>
                     <a
                         href="https://github.com/petrussola/"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <GitHubIcon style={{ fontSize: 80 }} />
+                        <GitHubIcon color="primary" style={{ fontSize: 80 }} />
                     </a>
                     <a
                         href="https://github.com/petrussola/"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <LinkedInIcon style={{ fontSize: 80 }} />
+                        <LinkedInIcon
+                            color="primary"
+                            style={{ fontSize: 80 }}
+                        />
                     </a>
                     <a
                         href="https://medium.com/@pere.solaclaver"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <AssignmentOutlinedIcon style={{ fontSize: 80 }} />
+                        <AssignmentOutlinedIcon
+                            color="primary"
+                            style={{ fontSize: 80 }}
+                        />
                     </a>
                     <a
                         href="https://twitter.com/petrussola"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <TwitterIcon style={{ fontSize: 80 }} />
+                        <TwitterIcon color="primary" style={{ fontSize: 80 }} />
                     </a>
                 </nav>
-                <h1>Hello, I am Pere</h1>
+                <h1>
+                    Hello, I am <span>Pere</span>
+                </h1>
                 <h3>I am a Software Engineer</h3>
             </section>
         </StyledDiv>
