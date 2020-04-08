@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 // COMPONENTS
@@ -9,13 +9,17 @@ import Projects from './components/projects';
 import Skills from './components/skills';
 import Footer from './components/footer';
 
+// DATA
+import data from './data/data';
+
 function App() {
+    const [listProjects] = useState(data);
     return (
         <div className="App">
             <Header />
             <Jumbotron />
             <Body />
-            <Projects />
+            <Projects listProjects={listProjects} />
             <Skills />
             <Footer />
         </div>

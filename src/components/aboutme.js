@@ -7,12 +7,13 @@ import styled from 'styled-components';
 import pereImage from '../media/pere.jpg';
 
 const StyledSection = styled.section`
+    /* background: green; */
     display: flex;
     flex-direction: flow;
     align-items: center;
     justify-content: space-evenly;
     height: 50vh;
-    padding: 0 5vh;
+    padding: 50px 5vh;
     section {
         height: inherit;
         width: 50%;
