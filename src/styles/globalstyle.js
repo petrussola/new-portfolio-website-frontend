@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -51,6 +52,25 @@ table {
 }
 *, *:before, *:after {
   box-sizing: border-box;
+}
+body {
+	font-family: Roboto, sans-serif;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+h1 {
+	font-size: 4rem;
+    padding: 2rem;
+}
+h2 {
+	font-size: 3rem;
+    padding: 1.5rem;
+}
+h3 {
+	font-size: 2rem;
+    padding: 0.5rem;
 }
 `;
 
