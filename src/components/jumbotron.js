@@ -35,6 +35,15 @@ const StyledDiv = styled.div`
             flex-direction: row;
             justify-content: space-around;
             width: 50%;
+            a {
+                transition: transform 0.5s;
+            }
+            a:hover {
+                transform: scale(1.1);
+                * {
+                    color: black;
+                }
+            }
         }
         span {
             color: #3f51b5;
