@@ -58,7 +58,7 @@ const SkillCard = ({ area, skills }) => {
             </div>
             <div className="skill-section">
                 {skills.map((skill) => {
-                    return <SkillUnit skill={skill} />;
+                    return <SkillUnit skill={skill} key={skill} />;
                 })}
             </div>
         </StyledDiv>

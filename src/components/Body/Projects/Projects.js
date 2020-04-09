@@ -37,7 +37,7 @@ const Projects = ({ listProjects }) => {
             <h3>Projects</h3>
             <section className="sub-section">
                 {listProjects.map((item) => {
-                    return <ProjectCard item={item} />;
+                    return <ProjectCard item={item} key={item.id} />;
                 })}
             </section>
         </StyledSection>

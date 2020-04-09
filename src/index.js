@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -10,10 +10,8 @@ import GlobalStyle from './styles/globalstyle';
 
 ReactDOM.render(
     <React.StrictMode>
-        <Router>
-            <GlobalStyle />
-            <App />
-        </Router>
+        <GlobalStyle />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );

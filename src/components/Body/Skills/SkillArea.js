@@ -20,7 +20,13 @@ const SkillArea = ({ listSkills }) => {
     return (
         <StyledSection className="test">
             {skillArea.map((area) => {
-                return <SkillCard area={area} skills={listSkills[area]} />;
+                return (
+                    <SkillCard
+                        area={area}
+                        skills={listSkills[area]}
+                        key={listSkills[area]}
+                    />
+                );
             })}
         </StyledSection>
     );
