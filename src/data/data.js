@@ -1,4 +1,5 @@
-import artFunderImage from '../media/projects/art-funder.png';
+import artFunderMac from '../media/projects/artFunderMac.png';
+import artFunder from '../media/projects/artFunder.png';
 
 export const data = [
     {
@@ -16,7 +17,8 @@ export const data = [
             'HTML',
             'CSS'
         ],
-        src: artFunderImage
+        srcMac: artFunderMac,
+        src: artFunder
     },
     {
         id: 2,
@@ -33,7 +35,8 @@ export const data = [
             'HTML',
             'CSS'
         ],
-        src: artFunderImage
+        srcMac: artFunderMac,
+        src: artFunder
     },
     {
         id: 3,
@@ -50,7 +53,8 @@ export const data = [
             'HTML',
             'CSS'
         ],
-        src: artFunderImage
+        srcMac: artFunderMac,
+        src: artFunder
     },
     {
         id: 4,
@@ -67,7 +71,8 @@ export const data = [
             'HTML',
             'CSS'
         ],
-        src: artFunderImage
+        srcMac: artFunderMac,
+        src: artFunder
     },
     {
         id: 5,
@@ -84,7 +89,8 @@ export const data = [
             'HTML',
             'CSS'
         ],
-        src: artFunderImage
+        srcMac: artFunderMac,
+        src: artFunder
     },
     {
         id: 6,
@@ -101,7 +107,8 @@ export const data = [
             'HTML',
             'CSS'
         ],
-        src: artFunderImage
+        srcMac: artFunderMac,
+        src: artFunder
     }
 ];
 

@@ -8,7 +8,7 @@ import SkillArea from './SkillArea';
 import SkillDescription from './SkillDescription';
 
 // MEDIA
-import backgroundImage from '../media/spikes.png';
+import backgroundImage from '../../../media/spikes.png';
 
 const StyledSection = styled.section`
     display: flex;

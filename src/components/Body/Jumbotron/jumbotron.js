@@ -11,7 +11,7 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import styled from 'styled-components';
 
 // MEDIA
-import backgroundImage from '../media/spikes.png';
+import backgroundImage from '../../../media/spikes.png';
 
 const StyledDiv = styled.div`
     width: 100%;

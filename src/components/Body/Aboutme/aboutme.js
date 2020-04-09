@@ -4,7 +4,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // MEDIA
-import pereImage from '../media/pere.jpg';
+import pereImage from '../../../media/pere.jpg';
 
 const StyledSection = styled.section`
     /* background: green; */

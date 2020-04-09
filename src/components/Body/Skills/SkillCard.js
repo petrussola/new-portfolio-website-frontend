@@ -7,9 +7,9 @@ import styled from 'styled-components';
 import SkillUnit from './SkillUnit';
 
 // MEDIA
-import react from '../media/icons/react.svg';
-import branch from '../media/icons/code-branch.svg';
-import node from '../media/icons/node-js.svg';
+import react from '../../../media/icons/react.svg';
+import branch from '../../../media/icons/code-branch.svg';
+import node from '../../../media/icons/node-js.svg';
 
 const StyledDiv = styled.div`
     display: flex;

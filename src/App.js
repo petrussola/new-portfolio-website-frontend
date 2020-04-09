@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
 
 // COMPONENTS
-import Header from './components/header';
-import Jumbotron from './components/jumbotron';
-import Body from './components/aboutme';
-import Projects from './components/projects';
-import Skills from './components/skills';
-import Footer from './components/footer';
+import Header from './components/Header/header';
+import Body from './components/Body/Body';
+import ProjectDetail from './components/Body/Projects/Projects';
+import Footer from './components/Footer/footer';
 
 // DATA
 import { data, skills } from './data/data';
@@ -18,11 +17,10 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Jumbotron />
-            <Body />
-            <Projects listProjects={listProjects} />
-            <Skills listSkills={listSkills} />
+            <Body listProjects={listProjects} listSkills={listSkills} />
             <Footer />
+            {/* routes */}
+            <Route path="/projects/:id" component={ProjectDetail} />
         </div>
     );
 }

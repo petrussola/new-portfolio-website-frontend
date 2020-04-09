@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-    h2 {
+    h3 {
         color: white;
     }
 `;
@@ -19,7 +19,7 @@ const StyledHeader = styled.header`
 const header = () => {
     return (
         <StyledHeader>
-            <h2>{`<Pere />`}</h2>
+            <h3>{`<Pere />`}</h3>
         </StyledHeader>
     );
 };

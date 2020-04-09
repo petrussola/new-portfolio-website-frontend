@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // STYLE
 import styled from 'styled-components';
@@ -44,12 +45,14 @@ const StyledSection = styled.section`
 const ProjectCard = ({ item }) => {
     return (
         <StyledSection>
-            <section className="project-photo">
-                <img src={item.src} alt={item.name} />
-            </section>
-            <section className="name-card">
-                <h4>{item.name}</h4>
-            </section>
+            <Link to={`/projects/${item.id}`}>
+                <section className="project-photo">
+                    <img src={item.src} alt={item.name} />
+                </section>
+                <section className="name-card">
+                    <h4>{item.name}</h4>
+                </section>
+            </Link>
         </StyledSection>
     );
 };

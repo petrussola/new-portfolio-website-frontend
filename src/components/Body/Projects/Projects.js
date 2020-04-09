@@ -7,7 +7,7 @@ import styled from 'styled-components';
 import ProjectCard from './ProjectCard';
 
 // MEDIA
-import backgroundImage from '../media/spikes.png';
+import backgroundImage from '../../../media/spikes.png';
 
 const StyledSection = styled.section`
     /* background-color: red; */
