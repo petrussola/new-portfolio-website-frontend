@@ -16,8 +16,10 @@ const StyledSection = styled.section`
     align-items: center;
     justify-content: center;
     background-image: url(${backgroundImage});
+    height: 95vh;
     width: 95%;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
     .detailsSkills {

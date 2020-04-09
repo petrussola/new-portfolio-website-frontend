@@ -11,13 +11,13 @@ import backgroundImage from '../media/spikes.png';
 
 const StyledSection = styled.section`
     /* background-color: red; */
-    margin: 50px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
-    width: 95%;
+    height: 95vh;
+    /* margin: 0 auto; */
+    /* width: 95%; */
     /* background-image: url(${backgroundImage}); */
     /* border-radius: 10px;
     box-shadow: 0.2rem 0.2rem 0.5rem gray; */
@@ -27,6 +27,7 @@ const StyledSection = styled.section`
         flex-flow: row wrap;
         justify-content: space-evenly;
         align-items: center;
+        /* margin-top: 0; */
     }
 `;
 
@@ -34,7 +35,7 @@ const Projects = ({ listProjects }) => {
     return (
         <StyledSection>
             <h3>Projects</h3>
-            <section>
+            <section className="sub-section">
                 {listProjects.map((item) => {
                     return <ProjectCard item={item} />;
                 })}

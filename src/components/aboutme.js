@@ -12,8 +12,8 @@ const StyledSection = styled.section`
     flex-direction: flow;
     align-items: center;
     justify-content: space-evenly;
-    height: 50vh;
-    padding: 50px 5vh;
+    height: 95vh;
+    /* padding: 50px 5vh; */
     section {
         height: inherit;
         width: 50%;

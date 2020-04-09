@@ -82,6 +82,14 @@ p {
 	font-size: 1rem;
     padding: 0.5rem;
 }
+section, footer {
+	margin-top: 2rem;
+	padding: 0 5vh;
+}
+/* 
+.sub-section {
+	margin-top: 0.5rem;
+} */
 `;
 
 export default GlobalStyle;

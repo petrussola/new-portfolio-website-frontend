@@ -4,19 +4,25 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
+    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     width: 30%;
-    background-color: red;
-    margin: 5px;
-    border-radius: 10px;
+    /* margin: 5px; */
+    padding: 0;
+    /* border-radius: 5px; */
     box-shadow: 0.1rem 0.1rem 1rem gray;
+    transition: transform 0.5s;
     &:hover {
         transform: scale(1.02);
     }
     section {
+        margin-top: 0;
+    }
+    .project-photo {
+        background-color: yellow;
         width: 100%;
         height: 75%;
         background-color: #f5f5f5;
@@ -30,6 +36,7 @@ const StyledSection = styled.section`
         img {
             height: auto;
             width: 100%;
+            border-radius: 5px;
         }
     }
 `;
@@ -37,11 +44,11 @@ const StyledSection = styled.section`
 const ProjectCard = ({ item }) => {
     return (
         <StyledSection>
-            <section>
+            <section className="project-photo">
                 <img src={item.src} alt={item.name} />
             </section>
             <section className="name-card">
-                <h3>{item.name}</h3>
+                <h4>{item.name}</h4>
             </section>
         </StyledSection>
     );
