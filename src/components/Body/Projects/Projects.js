@@ -33,7 +33,7 @@ const StyledSection = styled.section`
 
 const Projects = ({ listProjects }) => {
     return (
-        <StyledSection>
+        <StyledSection id="projects-section">
             <h3>Projects</h3>
             <section className="sub-section">
                 {listProjects.map((item) => {

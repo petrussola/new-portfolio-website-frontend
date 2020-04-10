@@ -1,5 +1,8 @@
+// MEDIA
 import artFunderMac from '../media/projects/artFunderMac.png';
 import artFunder from '../media/projects/artFunder.png';
+import telegram from '../media/projects/telegram.png';
+import telegramPhone from '../media/projects/telegramPhone.png';
 
 export const data = [
     {
@@ -13,30 +16,26 @@ export const data = [
             'Nodejs',
             'Express',
             'MongoDB',
-            'styled-components',
+            'Styled-components',
             'HTML',
-            'CSS'
+            'CSS',
+            'Heroku'
         ],
         srcMac: artFunderMac,
-        src: artFunder
+        src: artFunder,
+        github: 'https://github.com/LABS-EU3?q=art-collection&type=&language=',
+        link: 'https://art-funder.com/'
     },
     {
         id: 2,
-        name: 'Project1',
+        name: 'COVID-19 Telegram Bot',
         description:
-            'Art Funder empowers local art schools, traditionally underfunded, to sell art online worldwide in order to raise much needed funds.',
-        stack: [
-            'React',
-            'Redux',
-            'Nodejs',
-            'Express',
-            'MongoDB',
-            'styled-components',
-            'HTML',
-            'CSS'
-        ],
-        srcMac: artFunderMac,
-        src: artFunder
+            'Do you want to quickly check the official COVID-19 for a given country? Just type the ISO country code and you will get it instantly. For those of you who, like me, struggle to find accurate data in few clicks and mobile phone friendly.',
+        stack: ['Nodejs', 'Express', 'Telegram API', 'Heroku'],
+        srcMac: telegramPhone,
+        src: telegram,
+        github: 'https://github.com/petrussola/covid-country-data-telegram-bot',
+        link: 'https://art-funder.com/'
     },
     {
         id: 3,

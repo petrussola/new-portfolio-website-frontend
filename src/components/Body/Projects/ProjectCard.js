@@ -10,7 +10,8 @@ const StyledSection = styled.section`
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    width: 30%;
+    width: 350px;
+    height: 350px;
     /* margin: 5px; */
     padding: 0;
     /* border-radius: 5px; */
@@ -26,34 +27,43 @@ const StyledSection = styled.section`
         background-color: yellow;
         width: 100%;
         height: 75%;
-        background-color: #f5f5f5;
-        &.name-card {
-            height: 25%;
-            background-color: white;
-            h3 {
-                color: #3f51b5;
-            }
-        }
+        /* background-color: #f5f5f5; */
+        background-color: yellow;
         img {
-            height: auto;
+            height: 100%;
             width: 100%;
             border-radius: 5px;
+            object-fit: cover;
+            /* display: none; */
+        }
+    }
+    .name-card {
+        /* background-color: brown; */
+        height: 25%;
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h3 {
+            color: #3f51b5;
         }
     }
 `;
 
 const ProjectCard = ({ item }) => {
     return (
-        <StyledSection>
-            <Link to={`/projects/${item.id}`}>
-                <section className="project-photo">
+        <Link to={`/projects/${item.id}`}>
+            <StyledSection>
+                <div className="project-photo">
                     <img src={item.src} alt={item.name} />
-                </section>
-                <section className="name-card">
+                </div>
+                <div className="name-card">
                     <h4>{item.name}</h4>
-                </section>
-            </Link>
-        </StyledSection>
+                </div>
+            </StyledSection>
+        </Link>
     );
 };
 

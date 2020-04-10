@@ -86,10 +86,10 @@ section, footer {
 	margin-top: 2rem;
 	padding: 0 5vh;
 }
-/* 
-.sub-section {
-	margin-top: 0.5rem;
-} */
+.section-title {
+	color: #3f51b5;
+    font-weight: bold;
+}
 `;
 
 export default GlobalStyle;

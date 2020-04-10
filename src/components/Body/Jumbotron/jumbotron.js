@@ -68,7 +68,7 @@ const jumbotron = () => {
                         <GitHubIcon color="primary" style={{ fontSize: 80 }} />
                     </a>
                     <a
-                        href="https://github.com/petrussola/"
+                        href="https://www.linkedin.com/in/peresola/"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
