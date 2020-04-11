@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 // ICONS
 import GitHubIcon from '@material-ui/icons/GitHub';
@@ -73,6 +73,16 @@ const ProjectDetail = ({ listProjects, match }) => {
     const project = listProjects.find((item) => {
         return item.id === parseInt(id, 10);
     });
+    if (!project) {
+        return (
+            <Redirect
+                to={{
+                    pathname: '/project/not-found',
+                    state: { projectId: id }
+                }}
+            />
+        );
+    }
     return (
         <div>
             <StyledSection>
