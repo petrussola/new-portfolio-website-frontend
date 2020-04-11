@@ -15,13 +15,13 @@ const StyledSection = styled.section`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 95vh;
+    /* height: 95vh; */
     /* margin: 0 auto; */
     /* width: 95%; */
     /* background-image: url(${backgroundImage}); */
     /* border-radius: 10px;
     box-shadow: 0.2rem 0.2rem 0.5rem gray; */
-    section {
+    div {
         /* background-color: brown; */
         display: flex;
         flex-flow: row wrap;
@@ -34,12 +34,12 @@ const StyledSection = styled.section`
 const Projects = ({ listProjects }) => {
     return (
         <StyledSection id="projects-section">
-            <h3>Projects</h3>
-            <section className="sub-section">
+            <h3 className="section-title">Projects</h3>
+            <div className="sub-section">
                 {listProjects.map((item) => {
                     return <ProjectCard item={item} key={item.id} />;
                 })}
-            </section>
+            </div>
         </StyledSection>
     );
 };
