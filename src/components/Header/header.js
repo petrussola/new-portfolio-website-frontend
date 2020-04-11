@@ -11,6 +11,7 @@ const StyledHeader = styled.header`
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    padding: 1rem 2.5%;
     h3 {
         color: white;
     }

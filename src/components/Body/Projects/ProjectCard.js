@@ -14,7 +14,7 @@ const StyledSection = styled.section`
     height: 350px;
     /* margin: 5px; */
     padding: 0;
-    /* border-radius: 5px; */
+    border-radius: 5px;
     box-shadow: 0.1rem 0.1rem 1rem gray;
     transition: transform 0.5s;
     &:hover {
@@ -26,20 +26,21 @@ const StyledSection = styled.section`
     .project-photo {
         background-color: yellow;
         width: 100%;
-        height: 75%;
+        height: 80%;
         /* background-color: #f5f5f5; */
-        background-color: yellow;
+        /* background-color: yellow; */
         img {
             height: 100%;
             width: 100%;
-            border-radius: 5px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
             object-fit: cover;
             /* display: none; */
         }
     }
     .name-card {
         /* background-color: brown; */
-        height: 25%;
+        height: 20%;
         width: 100%;
         background-color: white;
         display: flex;

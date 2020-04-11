@@ -7,33 +7,35 @@ import styled from 'styled-components';
 import pereImage from '../../../media/pere.jpg';
 
 const StyledSection = styled.section`
-    /* background: green; */
     display: flex;
-    flex-direction: flow;
+    /* width: 100%; */
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 95vh;
+    height: 500px;
     /* padding: 50px 5vh; */
-    section {
-        height: inherit;
+    /* background: yellow; */
+    div {
+        /* background-color: red; */
+        height: 100%;
         width: 50%;
-        height: inherit;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: left;
         &.about-me-text {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: center;
-            text-align: left;
+            /* background: green; */
         }
-        h3 {
-            font-weight: bold;
-            color: #3f51b5;
-        }
-        img {
-            object-fit: cover;
-            height: inherit;
-            border-radius: 10px;
-            box-shadow: 0.2rem 0.2rem 0.5rem gray;
+        &.about-me-photo {
+            align-items: center;
+            img {
+                object-fit: cover;
+                height: 75%;
+                border-radius: 5px;
+                box-shadow: 0.2rem 0.2rem 0.5rem gray;
+            }
         }
     }
 `;
@@ -41,8 +43,8 @@ const StyledSection = styled.section`
 const body = () => {
     return (
         <StyledSection>
-            <section className="about-me-text">
-                <h3>About Me</h3>
+            <div className="about-me-text">
+                <h3 className="section-title">About Me</h3>
                 <p>
                     Lifelong learner, Growth Mindset-er and currently Senior
                     Account Manager and Sales for our top customers in Spain and
@@ -60,10 +62,10 @@ const body = () => {
                     When not in front of my computer I love to watch
                     documentaries and baking for my family on the weekends!
                 </p>
-            </section>
-            <section>
+            </div>
+            <div className="about-me-photo">
                 <img src={pereImage} alt="Headshot of Pere" />
-            </section>
+            </div>
         </StyledSection>
     );
 };
