@@ -3,6 +3,8 @@ import artFunderMac from '../media/projects/artFunderMac.png';
 import artFunder from '../media/projects/artFunder.png';
 import telegram from '../media/projects/telegram.png';
 import telegramPhone from '../media/projects/telegramPhone.png';
+import tipsease from '../media/projects/tipsease.png';
+import tipseaseMac from '../media/projects/tipseaseMac.png';
 
 export const data = [
     {
@@ -39,75 +41,14 @@ export const data = [
     },
     {
         id: 3,
-        name: 'Project2',
+        name: 'Tipsease',
         description:
-            'Art Funder empowers local art schools, traditionally underfunded, to sell art online worldwide in order to raise much needed funds.',
-        stack: [
-            'React',
-            'Redux',
-            'Nodejs',
-            'Express',
-            'MongoDB',
-            'styled-components',
-            'HTML',
-            'CSS'
-        ],
-        srcMac: artFunderMac,
-        src: artFunder
-    },
-    {
-        id: 4,
-        name: 'Project3',
-        description:
-            'Art Funder empowers local art schools, traditionally underfunded, to sell art online worldwide in order to raise much needed funds.',
-        stack: [
-            'React',
-            'Redux',
-            'Nodejs',
-            'Express',
-            'MongoDB',
-            'styled-components',
-            'HTML',
-            'CSS'
-        ],
-        srcMac: artFunderMac,
-        src: artFunder
-    },
-    {
-        id: 5,
-        name: 'Project3',
-        description:
-            'Art Funder empowers local art schools, traditionally underfunded, to sell art online worldwide in order to raise much needed funds.',
-        stack: [
-            'React',
-            'Redux',
-            'Nodejs',
-            'Express',
-            'MongoDB',
-            'styled-components',
-            'HTML',
-            'CSS'
-        ],
-        srcMac: artFunderMac,
-        src: artFunder
-    },
-    {
-        id: 6,
-        name: 'Project3',
-        description:
-            'Art Funder empowers local art schools, traditionally underfunded, to sell art online worldwide in order to raise much needed funds.',
-        stack: [
-            'React',
-            'Redux',
-            'Nodejs',
-            'Express',
-            'MongoDB',
-            'styled-components',
-            'HTML',
-            'CSS'
-        ],
-        srcMac: artFunderMac,
-        src: artFunder
+            'Tipsease is an app that allows you t tip service workers, so you do not have to rely on cash. Built 100% of the frontend.',
+        stack: ['React', 'Redux', 'styled-components', 'HTML', 'CSS'],
+        srcMac: tipseaseMac,
+        src: tipsease,
+        github: 'https://github.com/tipsease-webeu/tipsease-frontend',
+        link: 'https://tipsease.peresolaclaver.now.sh/'
     }
 ];
 

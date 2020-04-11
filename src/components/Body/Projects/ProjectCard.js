@@ -35,6 +35,7 @@ const StyledSection = styled.section`
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
             object-fit: cover;
+            object-position: left;
             /* display: none; */
         }
     }

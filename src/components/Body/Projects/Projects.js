@@ -24,6 +24,7 @@ const StyledSection = styled.section`
     padding-bottom: 2rem;
     div {
         /* background-color: brown; */
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-evenly;
