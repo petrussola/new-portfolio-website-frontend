@@ -12,7 +12,8 @@ const StyledSection = styled.section`
     align-items: flex-start;
     justify-content: center;
     width: 50%;
-    padding: 3rem;
+    padding: 0 3rem;
+    margin: 0;
 `;
 
 const SkillArea = ({ listSkills }) => {

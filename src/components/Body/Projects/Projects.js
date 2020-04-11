@@ -21,6 +21,7 @@ const StyledSection = styled.section`
     /* background-image: url(${backgroundImage}); */
     /* border-radius: 10px;
     box-shadow: 0.2rem 0.2rem 0.5rem gray; */
+    padding-bottom: 2rem;
     div {
         /* background-color: brown; */
         display: flex;

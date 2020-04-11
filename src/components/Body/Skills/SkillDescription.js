@@ -21,9 +21,9 @@ const SkillDescription = () => {
                 <br />
                 <br />
                 This also means I strive to follow best practices and use
-                industry-standard tools, including git-flow, Test Driven
-                Development, Continous Integration, linting (ESLint, Prettier)
-                and Package Management (NPM and Pipenv).
+                industry-standard tools, including git-flow, Testing Best
+                Practices, Continous Integration, Linting (ESLint, Prettier) and
+                Package Management (NPM, Pipenv).
                 <br />
                 <br />
                 Although I have a wide range of experience, the technology I

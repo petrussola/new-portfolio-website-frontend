@@ -12,7 +12,7 @@ const StyledSection = styled.section`
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 500px;
+    height: 65vh;
     /* padding: 50px 5vh; */
     /* background: yellow; */
     div {
@@ -44,7 +44,7 @@ const body = () => {
     return (
         <StyledSection>
             <div className="about-me-text">
-                <h3 className="section-title">About Me</h3>
+                <h3 className="section-title">About me</h3>
                 <p>
                     Lifelong learner, Growth Mindset-er and currently Senior
                     Account Manager and Sales for our top customers in Spain and

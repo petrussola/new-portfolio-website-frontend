@@ -24,7 +24,7 @@ const StyledDiv = styled.div`
         background-image: url(${backgroundImage});
         width: 95%;
         height: 90%;
-        border-radius: 10px;
+        border-radius: 5px;
         box-shadow: 0.2rem 0.2rem 0.5rem gray;
         display: flex;
         flex-direction: column;

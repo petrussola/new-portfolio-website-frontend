@@ -14,14 +14,17 @@ const StyledSection = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     background-image: url(${backgroundImage});
-    height: 95vh;
+    /* height: 95vh; */
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
+    .section-title {
+        padding-top: 2rem;
+    }
     .detailsSkills {
         display: flex;
         flex-direction: row;
@@ -33,11 +36,11 @@ const StyledSection = styled.section`
 const Skills = ({ listSkills }) => {
     return (
         <StyledSection>
-            <h3>Skills</h3>
-            <section className="detailsSkills">
+            <h3 className="section-title">Skills</h3>
+            <div className="detailsSkills">
                 <SkillArea listSkills={listSkills} />
                 <SkillDescription />
-            </section>
+            </div>
         </StyledSection>
     );
 };
