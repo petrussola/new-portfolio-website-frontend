@@ -5,11 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 // GLOBAL STYLE
-import GlobalStyle from './styles/globalstyle';
+// import GlobalStyle from './styles/globalstyle';
 
 ReactDOM.render(
     <React.StrictMode>
-        <GlobalStyle />
+        {/* <GlobalStyle /> */}
         <App />
     </React.StrictMode>,
     document.getElementById('root')
