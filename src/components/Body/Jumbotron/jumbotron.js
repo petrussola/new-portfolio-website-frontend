@@ -7,12 +7,32 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import AssignmentOutlinedIcon from '@material-ui/icons/AssignmentOutlined';
 import TwitterIcon from '@material-ui/icons/Twitter';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 // STYLES
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 // MEDIA
 import backgroundImage from '../../../media/spikes.png';
+
+const typing = keyframes`
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+`;
+
+const blinkCaret = keyframes`
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #3F51B5;
+    }
+`;
 
 const StyledDiv = styled.div`
     width: 100%;
@@ -63,6 +83,15 @@ const StyledDiv = styled.div`
         span {
             color: #3f51b5;
             font-weight: bold;
+        }
+        .typewriter h3 {
+            /* background-color: red; */
+            overflow: hidden;
+            border-right: 0.1em solid #3f51b5;
+            white-space: nowrap;
+            margin: 0 auto;
+            animation: ${typing} 3.5s steps(30, end),
+                ${blinkCaret} 0.5s step-end infinite;
         }
     }
 `;
@@ -123,7 +152,17 @@ const Jumbotron = () => {
                 <h1>
                     Hello, I am <span>Pere</span>
                 </h1>
-                <h3>I am a Software Engineer</h3>
+                <div className="typewriter">
+                    <h3>I am a Software Engineer</h3>
+                </div>
+                <a href="#about">
+                    <h4>
+                        <ExpandMoreIcon
+                            color="primary"
+                            style={{ fontSize: `${matches ? 80 : 40}` }}
+                        />
+                    </h4>
+                </a>
             </section>
         </StyledDiv>
     );

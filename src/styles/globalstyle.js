@@ -51,7 +51,8 @@ table {
 	border-spacing: 0;
 }
 *, *:before, *:after {
-  box-sizing: border-box;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 body {
 	font-family: Roboto, sans-serif;

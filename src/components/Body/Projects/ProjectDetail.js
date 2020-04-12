@@ -132,7 +132,7 @@ const ProjectDetail = ({ listProjects, match }) => {
                         <WebIcon color="primary" style={{ fontSize: 60 }} />
                     </a>
                 </nav>
-                <Link to="/#projects-section" className="back-projects">
+                <Link to="/#projects" className="back-projects">
                     <h4>&#8592; Back to all projects</h4>
                 </Link>
             </StyledSection>

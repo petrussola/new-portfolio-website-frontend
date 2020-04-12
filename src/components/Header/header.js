@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // STYLE
 import styled from 'styled-components';
@@ -23,9 +24,11 @@ const StyledHeader = styled.header`
 
 const header = () => {
     return (
-        <StyledHeader>
-            <h3>{`<Pere />`}</h3>
-        </StyledHeader>
+        <Link to="/">
+            <StyledHeader>
+                <h3>{`<Pere />`}</h3>
+            </StyledHeader>
+        </Link>
     );
 };
 
