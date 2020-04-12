@@ -12,7 +12,7 @@ const StyledSection = styled.section`
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 150vh;
+    /* height: 150vh; */
     /* padding: 50px 5vh; */
     /* background: yellow; */
     div {
@@ -25,14 +25,20 @@ const StyledSection = styled.section`
         text-align: left;
         @media (max-width: 600px) {
             width: 100%;
-            height: 350px;
-        }
-        &.about-me-text {
-            background: green;
+            align-items: center;
+            /* height: 480px; */
+            &.about-me-text {
+                /* background: green; */
+                order: 2;
+                padding-top: 1rem;
+            }
         }
         &.about-me-photo {
-            background-color: red;
+            /* background-color: red; */
             align-items: center;
+            @media (max-width: 600px) {
+                order: 1;
+            }
             img {
                 object-fit: cover;
                 height: 300px;

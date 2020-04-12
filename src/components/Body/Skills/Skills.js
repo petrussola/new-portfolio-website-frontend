@@ -22,6 +22,9 @@ const StyledSection = styled.section`
     margin-right: auto;
     border-radius: 5px;
     box-shadow: 0.2rem 0.2rem 0.5rem gray;
+    @media (max-width: 600px) {
+        padding-bottom: 2rem;
+    }
     .section-title {
         padding-top: 2rem;
     }
@@ -30,6 +33,11 @@ const StyledSection = styled.section`
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: 800px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
     }
 `;
 

@@ -25,12 +25,23 @@ const StyledSection = styled.section`
     justify-content: space-around;
     align-items: center;
     padding-top: 5vh;
+    @media (max-width: 800px) {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 5vh 0 0 0;
+    }
     .img-container {
         width: 50vw;
         border-radius: 5px;
         background-color: #f5f5f5;
         border-radius: 10px;
         box-shadow: 0.2rem 0.2rem 0.5rem gray;
+        @media (max-width: 800px) {
+            width: 100%;
+            border-radius: 0;
+            box-shadow: none;
+        }
         img {
             width: 90%;
             /* height: auto; */
@@ -46,6 +57,9 @@ const StyledSection = styled.section`
         justify-content: space-evenly;
         align-items: center;
         padding-top: 1rem;
+        @media (max-width: 800px) {
+            width: 75%;
+        }
         a {
             transition: transform 0.5s;
             &:hover {
@@ -62,6 +76,10 @@ const StyledSection = styled.section`
         align-items: center;
         justify-content: flex-start;
         padding-top: 1rem;
+        @media (max-width: 800px) {
+            width: 100%;
+            justify-content: center;
+        }
     }
     .back-projects {
         padding: 1rem 0;

@@ -1,4 +1,5 @@
 import React from 'react';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 // ICONS
 import EmailIcon from '@material-ui/icons/Email';
@@ -18,11 +19,17 @@ const StyledFooter = styled.footer`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @media (max-width: 800px) {
+        height: 7rem;
+    }
     nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         width: 30%;
+        @media (max-width: 800px) {
+            width: 75%;
+        }
         a {
             transition: transform 0.5s;
             color: white;
@@ -39,41 +46,46 @@ const StyledFooter = styled.footer`
     }
 `;
 
-const footer = () => {
+const Footer = () => {
     const year = new Date().getFullYear();
+    const matches = useMediaQuery('(min-width:600px)');
     return (
         <StyledFooter>
             <nav>
                 <a href="mailto:pere.solaclaver@gmail.com">
-                    <EmailIcon style={{ fontSize: 40 }} />
+                    <EmailIcon style={{ fontSize: `${matches ? 40 : 30}` }} />
                 </a>
                 <a
                     href="https://github.com/petrussola/"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <GitHubIcon style={{ fontSize: 40 }} />
+                    <GitHubIcon style={{ fontSize: `${matches ? 40 : 30}` }} />
                 </a>
                 <a
                     href="https://github.com/petrussola/"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <LinkedInIcon style={{ fontSize: 40 }} />
+                    <LinkedInIcon
+                        style={{ fontSize: `${matches ? 40 : 30}` }}
+                    />
                 </a>
                 <a
                     href="https://medium.com/@pere.solaclaver"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <AssignmentOutlinedIcon style={{ fontSize: 40 }} />
+                    <AssignmentOutlinedIcon
+                        style={{ fontSize: `${matches ? 40 : 30}` }}
+                    />
                 </a>
                 <a
                     href="https://twitter.com/petrussola"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
-                    <TwitterIcon style={{ fontSize: 40 }} />
+                    <TwitterIcon style={{ fontSize: `${matches ? 40 : 30}` }} />
                 </a>
             </nav>
             <p>&copy; {year} - Made with love with React by Pere</p>
@@ -81,4 +93,4 @@ const footer = () => {
     );
 };
 
-export default footer;
+export default Footer;

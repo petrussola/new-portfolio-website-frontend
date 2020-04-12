@@ -6,6 +6,11 @@ import styled from 'styled-components';
 const StyledSection = styled.section`
     width: 50%;
     padding: 3rem;
+    @media (max-width: 800px) {
+        width: 100%;
+        padding: 0;
+        order: 1;
+    }
     h4 {
         text-align: left;
     }

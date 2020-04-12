@@ -63,19 +63,31 @@ a {
 h1 {
 	font-size: 4rem;
     padding: 2rem;
+	@media (max-width: 600px) {
+		font-size: 3rem
+	}
 }
 h2 {
 	font-size: 3rem;
     padding: 1.5rem;
+	@media (max-width: 600px) {
+		font-size: 2rem;
+	}
 }
 h3 {
 	font-size: 2rem;
     padding: 0.5rem;
+	@media (max-width: 600px) {
+		font-size: 1.5rem;
+	}
 }
 h4 {
 	font-size: 1.3rem;
 	line-height: 2rem;
     padding: 0.5rem;
+	@media (max-width: 600px) {
+		font-size: 1rem;
+	}
 }
 p {
 	line-height: 1.5rem;
@@ -84,7 +96,11 @@ p {
 }
 section, footer {
 	margin-top: 2rem;
-	padding: 0 5vh;
+	padding: 0 5vw;
+	@media (max-width: 600px) {
+		margin-top: 1rem;
+        padding: 0 1vw;
+    }
 }
 .section-title {
 	color: #3f51b5;

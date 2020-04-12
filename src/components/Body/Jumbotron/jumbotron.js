@@ -21,6 +21,10 @@ const StyledDiv = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    /* background-color: red; */
+    @media (max-width: 800px) {
+        height: 95vh;
+    }
     section {
         background-image: url(${backgroundImage});
         width: 95%;
@@ -31,15 +35,15 @@ const StyledDiv = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        @media (max-width: 600px) {
-            width: 100%;
+        @media (max-width: 800px) {
+            width: 95%;
         }
         nav {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             width: 50%;
-            @media (max-width: 600px) {
+            @media (max-width: 800px) {
                 width: 90%;
             }
             a {
@@ -50,6 +54,10 @@ const StyledDiv = styled.div`
                 * {
                     color: black;
                 }
+            }
+        }
+        h1 {
+            @media (max-width: 800px) {
             }
         }
         span {

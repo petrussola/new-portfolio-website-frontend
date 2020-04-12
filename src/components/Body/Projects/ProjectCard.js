@@ -17,6 +17,13 @@ const StyledSection = styled.section`
     border-radius: 5px;
     box-shadow: 0.1rem 0.1rem 1rem gray;
     transition: transform 0.5s;
+    @media (max-width: 600px) {
+        width: 90vw;
+    }
+    @media (max-width: 1200px) {
+        width: 300px;
+        height: 300px;
+    }
     &:hover {
         transform: scale(1.02);
     }
