@@ -12,6 +12,9 @@ const StyledHeader = styled.header`
     align-items: center;
     justify-content: flex-start;
     padding: 1rem 2.5%;
+    @media (max-width: 600px) {
+        justify-content: center;
+    }
     h3 {
         color: white;
     }

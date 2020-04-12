@@ -1,4 +1,5 @@
 import React from 'react';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 // ICONS
 import EmailIcon from '@material-ui/icons/Email';
@@ -30,11 +31,17 @@ const StyledDiv = styled.div`
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        @media (max-width: 600px) {
+            width: 100%;
+        }
         nav {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             width: 50%;
+            @media (max-width: 600px) {
+                width: 90%;
+            }
             a {
                 transition: transform 0.5s;
             }
@@ -52,20 +59,27 @@ const StyledDiv = styled.div`
     }
 `;
 
-const jumbotron = () => {
+const Jumbotron = () => {
+    const matches = useMediaQuery('(min-width:600px)');
     return (
         <StyledDiv>
             <section>
                 <nav>
                     <a href="mailto:pere.solaclaver@gmail.com">
-                        <EmailIcon style={{ fontSize: 80 }} color="primary" />
+                        <EmailIcon
+                            style={{ fontSize: `${matches ? 80 : 40}` }}
+                            color="primary"
+                        />
                     </a>
                     <a
                         href="https://github.com/petrussola/"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <GitHubIcon color="primary" style={{ fontSize: 80 }} />
+                        <GitHubIcon
+                            color="primary"
+                            style={{ fontSize: `${matches ? 80 : 40}` }}
+                        />
                     </a>
                     <a
                         href="https://www.linkedin.com/in/peresola/"
@@ -74,7 +88,7 @@ const jumbotron = () => {
                     >
                         <LinkedInIcon
                             color="primary"
-                            style={{ fontSize: 80 }}
+                            style={{ fontSize: `${matches ? 80 : 40}` }}
                         />
                     </a>
                     <a
@@ -84,7 +98,7 @@ const jumbotron = () => {
                     >
                         <AssignmentOutlinedIcon
                             color="primary"
-                            style={{ fontSize: 80 }}
+                            style={{ fontSize: `${matches ? 80 : 40}` }}
                         />
                     </a>
                     <a
@@ -92,7 +106,10 @@ const jumbotron = () => {
                         target="_blank"
                         rel="noreferrer noopener"
                     >
-                        <TwitterIcon color="primary" style={{ fontSize: 80 }} />
+                        <TwitterIcon
+                            color="primary"
+                            style={{ fontSize: `${matches ? 80 : 40}` }}
+                        />
                     </a>
                 </nav>
                 <h1>
@@ -104,4 +121,4 @@ const jumbotron = () => {
     );
 };
 
-export default jumbotron;
+export default Jumbotron;

@@ -9,30 +9,33 @@ import pereImage from '../../../media/pere.jpg';
 const StyledSection = styled.section`
     display: flex;
     /* width: 100%; */
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    height: 65vh;
+    height: 150vh;
     /* padding: 50px 5vh; */
     /* background: yellow; */
     div {
-        /* background-color: red; */
         height: 100%;
         width: 50%;
-        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         text-align: left;
+        @media (max-width: 600px) {
+            width: 100%;
+            height: 350px;
+        }
         &.about-me-text {
-            /* background: green; */
+            background: green;
         }
         &.about-me-photo {
+            background-color: red;
             align-items: center;
             img {
                 object-fit: cover;
-                height: 75%;
+                height: 300px;
                 border-radius: 5px;
                 box-shadow: 0.2rem 0.2rem 0.5rem gray;
             }
