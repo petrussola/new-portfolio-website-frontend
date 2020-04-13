@@ -29,11 +29,6 @@ const SkillDescription = () => {
                 industry-standard tools, including git-flow, Testing Best
                 Practices, Continous Integration, Linting (ESLint, Prettier) and
                 Package Management (NPM, Pipenv).
-                <br />
-                <br />
-                Although I have a wide range of experience, the technology I
-                prefer and/or am most familiar with includes React, Redux, Node,
-                Postgres, JavaScript ES6, Sass/CSS/PostCSS, HTML.
             </h4>
         </StyledSection>
     );
