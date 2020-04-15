@@ -5,14 +5,12 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const StyledSection = styled.section`
-    /* background-color: red; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     width: 350px;
     height: 350px;
-    /* margin: 5px; */
     padding: 0;
     border-radius: 5px;
     box-shadow: 0.1rem 0.1rem 1rem gray;
@@ -31,11 +29,8 @@ const StyledSection = styled.section`
         margin-top: 0;
     }
     .project-photo {
-        background-color: yellow;
         width: 100%;
         height: 80%;
-        /* background-color: #f5f5f5; */
-        /* background-color: yellow; */
         img {
             height: 100%;
             width: 100%;
@@ -43,11 +38,9 @@ const StyledSection = styled.section`
             border-top-right-radius: 5px;
             object-fit: cover;
             object-position: left;
-            /* display: none; */
         }
     }
     .name-card {
-        /* background-color: brown; */
         height: 20%;
         width: 100%;
         background-color: white;

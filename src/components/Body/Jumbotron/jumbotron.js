@@ -41,7 +41,6 @@ const StyledDiv = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    /* background-color: red; */
     @media (max-width: 800px) {
         height: 95vh;
     }
@@ -57,6 +56,15 @@ const StyledDiv = styled.div`
         justify-content: center;
         @media (max-width: 800px) {
             width: 95%;
+        }
+        a {
+            transition: transform 0.5s;
+        }
+        a:hover {
+            transform: scale(1.1);
+            * {
+                color: black;
+            }
         }
         nav {
             display: flex;
@@ -85,12 +93,11 @@ const StyledDiv = styled.div`
             font-weight: bold;
         }
         .typewriter h3 {
-            /* background-color: red; */
             overflow: hidden;
             border-right: 0.1em solid #3f51b5;
             white-space: nowrap;
             margin: 0 auto;
-            animation: ${typing} 3.5s steps(30, end),
+            animation: ${typing} 2.5s steps(20, end),
                 ${blinkCaret} 0.5s step-end infinite;
         }
     }

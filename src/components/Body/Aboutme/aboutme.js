@@ -8,13 +8,9 @@ import pereImage from '../../../media/pere.jpg';
 
 const StyledSection = styled.section`
     display: flex;
-    /* width: 100%; */
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
-    /* height: 150vh; */
-    /* padding: 50px 5vh; */
-    /* background: yellow; */
     div {
         height: 100%;
         width: 50%;
@@ -26,15 +22,12 @@ const StyledSection = styled.section`
         @media (max-width: 600px) {
             width: 100%;
             align-items: center;
-            /* height: 480px; */
             &.about-me-text {
-                /* background: green; */
                 order: 2;
                 padding-top: 1rem;
             }
         }
         &.about-me-photo {
-            /* background-color: red; */
             align-items: center;
             @media (max-width: 600px) {
                 order: 1;
@@ -42,8 +35,10 @@ const StyledSection = styled.section`
             img {
                 object-fit: cover;
                 height: 300px;
-                border-radius: 5px;
+                width: 300px;
+                border-radius: 100%;
                 box-shadow: 0.2rem 0.2rem 0.5rem gray;
+                object-position: center top;
             }
         }
     }
@@ -53,7 +48,7 @@ const body = () => {
     return (
         <StyledSection id="about">
             <div className="about-me-text">
-                <h3 className="section-title">About me</h3>
+                <h3 className="section-title">About Me</h3>
                 <p>
                     Lifelong learner, Growth Mindset-er and currently Senior
                     Account Manager and Sales for our top customers in Spain and

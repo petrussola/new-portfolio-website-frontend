@@ -14,7 +14,6 @@ const StyledSection = styled.section`
     width: 50%;
     padding: 0 3rem;
     margin: 0;
-    /* background-color: yellow; */
     @media (max-width: 800px) {
         width: 100%;
         padding: 0;
