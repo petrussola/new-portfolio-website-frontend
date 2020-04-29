@@ -32,8 +32,15 @@ export const data = [
         id: 2,
         name: 'COVID-19 Telegram Bot',
         description:
-            'Do you want to quickly check the official COVID-19 for a given country? Just type the ISO country code and you will get it instantly. For those of you who, like me, struggle to find accurate data in few clicks and mobile phone friendly.',
-        stack: ['Nodejs', 'Express', 'Telegram API', 'Heroku'],
+            'Do you want to quickly check the official COVID-19 for a given country? Just type the ISO country code and you will get it instantly. NEW: returns graph so you can check the trend in your country. For those of you who, like me, struggle to find accurate data in few clicks and mobile phone friendly.',
+        stack: [
+            'Nodejs',
+            'Express',
+            'Telegram API',
+            'Heroku',
+            'AWS',
+            'Highcharts'
+        ],
         srcMac: telegramPhone,
         src: telegram,
         github: 'https://github.com/petrussola/covid-country-data-telegram-bot',
@@ -64,7 +71,8 @@ export const skills = {
         'Jest',
         'Netlify',
         'Zeit',
-        'Stripe'
+        'Stripe',
+        'AWS'
     ],
     Backend: [
         'Nodejs',
@@ -78,7 +86,8 @@ export const skills = {
         'Travis-CI',
         'Continuous Integration',
         'Heroku',
-        'Stripe'
+        'Stripe',
+        'AWS'
     ],
     'Version Control': ['Git', 'GitHub']
 };
