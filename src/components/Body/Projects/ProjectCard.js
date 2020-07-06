@@ -36,7 +36,7 @@ const StyledSection = styled.section`
             width: 100%;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            object-fit: cover;
+            object-fit: scale-down;
             object-position: left;
         }
     }

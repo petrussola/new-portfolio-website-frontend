@@ -125,7 +125,7 @@ const ProjectDetail = ({ listProjects, match }) => {
                         <GitHubIcon color="primary" style={{ fontSize: 60 }} />
                     </a>
                     <a
-                        href="https://art-funder.com/"
+                        href={project.link}
                         target="_blank"
                         rel="noreferrer noopener"
                     >

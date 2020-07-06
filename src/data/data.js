@@ -5,8 +5,21 @@ import telegram from '../media/projects/telegram.png';
 import telegramPhone from '../media/projects/telegramPhone.png';
 import tipsease from '../media/projects/tipsease.png';
 import tipseaseMac from '../media/projects/tipseaseMac.png';
+import socvtv from '../media/projects/socvtv.png';
+import socvtvMac from '../media/projects/socvtvMac.png';
 
 export const data = [
+    {
+        id: 4,
+        name: 'SocVTV.fun',
+        description:
+            'Folks from my hometown are known to be very proud of their origins. This fun quizz tests their knowledge about the town in two levels of difficulty.',
+        stack: ['HTML', 'CSS', 'Vanilla JS', 'Nodejs'],
+        srcMac: socvtvMac,
+        src: socvtv,
+        github: 'https://github.com/petrussola/vtv-frontend',
+        link: 'https://www.socvtv.fun/'
+    },
     {
         id: 1,
         name: 'Art-Funder.com',
@@ -63,7 +76,7 @@ export const skills = {
     Frontend: [
         'React',
         'Redux',
-        'Javacsript',
+        'Javascript',
         'HTML',
         'CSS',
         'Styled-Components',
