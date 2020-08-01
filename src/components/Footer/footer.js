@@ -72,7 +72,7 @@ const Footer = () => {
                     />
                 </a>
                 <a
-                    href="https://medium.com/@pere.solaclaver"
+                    href="https://dev.to/petrussola"
                     target="_blank"
                     rel="noreferrer noopener"
                 >
