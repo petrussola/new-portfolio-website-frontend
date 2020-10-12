@@ -7,8 +7,21 @@ import tipsease from '../media/projects/tipsease.png';
 import tipseaseMac from '../media/projects/tipseaseMac.png';
 import socvtv from '../media/projects/socvtv.png';
 import socvtvMac from '../media/projects/socvtvMac.png';
+import shortener from '../media/projects/shortener.png';
+import shortenerMac from '../media/projects/shortenerMac.png';
 
 export const data = [
+    {
+        id: 5,
+        name: 'Url Shortener App',
+        description:
+            'A url shortener with signup, login features and administrator profile privilege. I built it end to end.',
+        stack: ['React', 'Node.js', 'PostgreSQL', 'Material UI'],
+        srcMac: shortenerMac,
+        src: shortener,
+        github: 'https://github.com/petrussola?tab=projects',
+        link: 'https://url-fe-dev.andriy.online/'
+    },
     {
         id: 4,
         name: 'SocVTV.fun',
