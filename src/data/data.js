@@ -9,8 +9,21 @@ import socvtv from '../media/projects/socvtv.png';
 import socvtvMac from '../media/projects/socvtvMac.png';
 import shortener from '../media/projects/shortener.png';
 import shortenerMac from '../media/projects/shortenerMac.png';
+import bst from '../media/projects/bst.png';
+import bstMac from '../media/projects/bstMac.png';
 
 export const data = [
+    {
+        id: 6,
+        name: 'Yet Another Binary Search Tree NPM Module',
+        description:
+            '(Yet another) Binary Search Tree module on NPM. Testing suite with Jest.',
+        stack: ['Javascript', 'Node.js', 'Jest'],
+        srcMac: bstMac,
+        src: bst,
+        github: 'https://github.com/petrussola/yabst',
+        link: 'https://www.npmjs.com/package/yabst'
+    },
     {
         id: 5,
         name: 'Url Shortener App',
