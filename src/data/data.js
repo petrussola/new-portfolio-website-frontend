@@ -1,6 +1,4 @@
 // MEDIA
-import artFunderMac from '../media/projects/artFunderMac.png';
-import artFunder from '../media/projects/artFunder.png';
 import telegram from '../media/projects/telegram.png';
 import telegramPhone from '../media/projects/telegramPhone.png';
 import tipsease from '../media/projects/tipsease.png';
@@ -57,27 +55,6 @@ export const data = [
         src: socvtv,
         github: 'https://github.com/petrussola/vtv-frontend',
         link: 'https://www.socvtv.fun/'
-    },
-    {
-        id: 1,
-        name: 'Art-Funder.com',
-        description:
-            'Art Funder empowers local art schools, traditionally underfunded, to sell art online worldwide in order to raise much needed funds.',
-        stack: [
-            'React',
-            'Redux',
-            'Nodejs',
-            'Express',
-            'MongoDB',
-            'Styled-components',
-            'HTML',
-            'CSS',
-            'Heroku'
-        ],
-        srcMac: artFunderMac,
-        src: artFunder,
-        github: 'https://github.com/LABS-EU3?q=art-collection&type=&language=',
-        link: 'https://art-funder.com/'
     },
     {
         id: 2,
