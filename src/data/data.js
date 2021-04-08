@@ -11,8 +11,20 @@ import shortener from '../media/projects/shortener.png';
 import shortenerMac from '../media/projects/shortenerMac.png';
 import bst from '../media/projects/bst.png';
 import bstMac from '../media/projects/bstMac.png';
+import fx from '../media/projects/fxConverter.png';
+import fxMac from '../media/projects/fxConverterMac.png';
 
 export const data = [
+    {
+        id: 7,
+        name: 'Currency Converter',
+        description: 'Currency converter for major global currencies.',
+        stack: ['React', 'Styled-components'],
+        srcMac: fxMac,
+        src: fx,
+        github: 'https://github.com/petrussola/fx-converter',
+        link: 'https://fx-converter.netlify.app/'
+    },
     {
         id: 6,
         name: 'Yet Another Binary Search Tree NPM Module',
