@@ -11,8 +11,59 @@ import bst from '../media/projects/bst.png';
 import bstMac from '../media/projects/bstMac.png';
 import fx from '../media/projects/fxConverter.png';
 import fxMac from '../media/projects/fxConverterMac.png';
+import pomodoro from '../media/projects/pomodor.png';
+import pomodoroMac from '../media/projects/pomodorMac.png';
+import editor from '../media/projects/editor.png';
+import editorMac from '../media/projects/editorMac.png';
+import rps from '../media/projects/rps.png';
+import rpsMac from '../media/projects/rpsMac.png';
+import us from '../media/projects/us.png';
+import usMac from '../media/projects/usMac.png';
 
 export const data = [
+    {
+        id: 11,
+        name: 'Infinite Scrolling Unsplash Photos',
+        description: 'Search app for Unsplash photos with infinite scrolling',
+        stack: ['React'],
+        srcMac: usMac,
+        src: us,
+        github: 'https://github.com/petrussola/infinite-image-gallery',
+        link: 'https://pere-react-infinite-scroll.netlify.app/'
+    },
+    {
+        id: 10,
+        name: 'Rock Paper Scissors Game',
+        description:
+            'Clasic Rock - Paper - Scissors. Keeps track of wins and losses in the session',
+        stack: ['React'],
+        srcMac: rpsMac,
+        src: rps,
+        github: 'https://github.com/petrussola/rock-paper-scissors',
+        link: 'https://pere-react-rockpaperscissors.netlify.app/'
+    },
+    {
+        id: 9,
+        name: 'Markdown Editor',
+        description:
+            'Clasic markdown styles apply: # for h1, ## for h2, - for ul, etc.',
+        stack: ['React'],
+        srcMac: editorMac,
+        src: editor,
+        github: 'https://github.com/petrussola/markdown-editor',
+        link: 'https://pere-react-markdown.netlify.app/'
+    },
+    {
+        id: 8,
+        name: 'Pomodoro Timer',
+        description:
+            'Timer to track how much time you spend on a task. Start, pause and reset options.',
+        stack: ['React'],
+        srcMac: pomodoroMac,
+        src: pomodoro,
+        github: 'https://github.com/petrussola/pomodoro-timer',
+        link: 'https://pere-react-pomodoro.netlify.app/'
+    },
     {
         id: 7,
         name: 'Currency Converter',
