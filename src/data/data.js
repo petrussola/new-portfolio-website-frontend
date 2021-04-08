@@ -19,7 +19,7 @@ export const data = [
         id: 7,
         name: 'Currency Converter',
         description: 'Currency converter for major global currencies.',
-        stack: ['React', 'Styled-components'],
+        stack: ['React', 'Styled-components', 'Fixer.io API'],
         srcMac: fxMac,
         src: fx,
         github: 'https://github.com/petrussola/fx-converter',
