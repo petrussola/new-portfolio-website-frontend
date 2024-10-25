@@ -51,11 +51,6 @@
         "singleQuote": true,
         "endOfLine": "auto"
     },
-    "husky": {
-        "hooks": {
-            "pre-push": "pnpm test"
-        }
-    },
     "lint-staged": {
         "*.+(js|jsx)": [
             "eslint --fix",
